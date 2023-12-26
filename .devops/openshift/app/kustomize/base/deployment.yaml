@@ -5,7 +5,7 @@ metadata:
   labels:
     app: api-sso
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: api-sso
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: api-sso
-        image: registry/group/image:tag
+        image: httpd:latest
         ports:
-        - containerPort: 80
+        - containerPort: 8080

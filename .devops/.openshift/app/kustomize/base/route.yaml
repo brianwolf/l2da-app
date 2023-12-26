@@ -1,0 +1,15 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: api-sso
+spec:
+  port:
+    targetPort: http
+  to:
+    kind: Service
+    name: api-sso
+    weight: 100
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+

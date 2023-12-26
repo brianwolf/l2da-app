@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-sso
+data:
+  POSTGRESQL_JDBC_URL: jdbc:postgresql://configure-me.com:5432/test
+  APP_PARA_PEGARLE: https://lasegunda.gateway.com/app_golpeada/

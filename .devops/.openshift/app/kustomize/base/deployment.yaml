@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-sso
+  labels:
+    app: api-sso
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: api-sso
+  template:
+    metadata:
+      labels:
+        app: api-sso
+    spec:
+      containers:
+      - name: api-sso
+        image: registry/group/image:tag
+        ports:
+        - containerPort: 80

@@ -1,0 +1,23 @@
+policies_config: |
+  [
+      {
+          "name": "apicast",
+          "version": "builtin",
+          "configuration": {},
+          "enabled": "true"
+      },
+      {
+          "name": "cors",
+          "version": "builtin",
+          "configuration": {
+              "allow_origin": "*"
+          },
+          "enabled": "true"
+      },
+      {
+          "name": "token-exchange-policy",
+          "version": "0.2",
+          "configuration": {},
+          "enabled": "true"
+      }
+  ]

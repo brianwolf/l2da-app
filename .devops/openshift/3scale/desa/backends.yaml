@@ -1,0 +1,11 @@
+- name: api-sso-desa-1
+  system_name: api-sso-desa-1
+  description: api-sso-desa-1
+  private_endpoint: https://jsonplaceholder.typicode.com:443/posts
+  path: /hola
+
+- name: api-sso-desa-2
+  system_name: api-sso-desa-2
+  description: api-sso-desa-2
+  private_endpoint: https://jsonplaceholder.typicode.com:443/posts/1
+  path: /chau

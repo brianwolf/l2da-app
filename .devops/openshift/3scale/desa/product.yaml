@@ -1,4 +1,4 @@
 name: api-sso-desa
 system_name: api-sso-desa
 description: api-sso-desa
-backend_version: oidc
+backend_version: 1
